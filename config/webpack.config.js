@@ -9,8 +9,11 @@ module.exports = {
     entry: [paths.src + '/main.js'],
 
     output: {
-        path: paths.bulid,
+        path: paths.build,
         filename: 'main.bundle.js'
+    },
+    devServer: {
+        open: true,
     },
 
     module: {
