@@ -34,8 +34,7 @@ module.exports = {
                         name: '[name]-[contenthash:6].[ext]',
                         outputPath: 'images',
                     }
-
-                }, ],
+                }],
             },
         ]
     },
