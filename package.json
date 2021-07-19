@@ -8,8 +8,9 @@
     "dev": "webpack --config ./config/webpack.config.js",
     "prod": "webpack --config ./config/webpack.config.prod.js"
   },
-  "author": "",
+  "author": "Jakub Jóźwiak",
   "license": "ISC",
+  "browserslistrc": "> 0.3%",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
