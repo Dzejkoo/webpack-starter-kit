@@ -4,7 +4,7 @@ const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
     mode: 'production',
     entry: [paths.src + '/main.js'],
@@ -47,5 +47,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'style/[name]-[contenthash:4].css'
         }),
+        new CopyPlugin({
+            patterns: [{
+                from: 'public/images',
+                to: 'images'
+            }]
+        })
     ]
 }
