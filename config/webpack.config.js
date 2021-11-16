@@ -22,7 +22,8 @@ module.exports = {
         rules: [{
                 test: /\.txt$/,
                 use: 'raw-loader',
-            },
+        },
+            
             {
                 test: /\.(sass|scss)$/,
                 use: ['style-loader', 'css-loader', 'sass-loader']

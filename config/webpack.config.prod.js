@@ -17,6 +17,10 @@ module.exports = {
         rules: [{
                 test: /\.txt$/,
                 use: 'raw-loader',
+        },
+            {
+                test: /\.(js)/,
+                use: ['babel-loader']
             },
             {
                 test: /\.s[ac]ss$/i,
